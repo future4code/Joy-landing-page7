@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* início do CSS do Grid com 4 fotos */
+.cardPhotos {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid4Photos {
+    width: 16vw;
+}
+
+.buttonGrid4Imagens {
+    background-color: rgb(223, 64, 90);
+    width: 16vw;
+    color: white;
+    border: none;
+    padding: 1vh 1vw ;
+    border-radius: 4px;
+}
+
+.grid4Imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+}
+/* final do CSS do footer */
+
+/* início do CSS do footer */
+footer {
+    background-color: rgb(223, 64, 90);
+    position: fixed;
+    bottom: 0;
+    width:100vw;
+    text-align: center;
+}
+
+.h3footer {
+    color: white;
+    margin-top: 2vh;
+}
+
+.icons {
+    width: 2vw;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+/* final do CSS do footer */
