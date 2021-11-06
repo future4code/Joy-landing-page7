@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: 0;
+}
+
+header {
+    background-color: #EB5D5F;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* início do CSS do carrocel */
+
+
+@font-face {
+    font-family: arial, helvetica, sans-serif;
+    src: url('/site/fonte-de-texto/Segoe\ UI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-principal {
+    display: flex;   
+    flex-direction: left;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 15px; 
+}
+
+.card-principal-imagens {
+    display: flex;
+    margin-right: 0;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px 30px 20px 5px;
+    padding-bottom: 760px;
+    padding-top: 0px;  
+}
+
+.foto-slideshow {
+    width: 100%;
+    padding: 0%;
+    position: absolute;
+    opacity: 0;
+    animation: transicao 20s infinite;
+    height: 750px;
+    object-fit: cover;
+}
+
+
+.foto-slideshow:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto-slideshow:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto-slideshow:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.foto-slideshow:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.foto-slideshow:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes transicao{
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* FIM do CSS do carrocel */
+
+
+/* início do CSS do Grid com 4 fotos */
+.cardPhotos {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid4Photos {
+    width: 16vw;
+}
+
+.buttonGrid4Imagens {
+    background-color: #EB5D5F;
+    width: 16vw;
+    color: white;
+    border: none;
+    padding: 1vh 1vw ;
+    border-radius: 4px;
+}
+
+.grid4Imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+}
+/* final do CSS do footer */
+
+/* início do CSS do footer */
+footer {
+    background-color: #EB5D5F;
+    position: fixed;
+    bottom: 0;
+    width:100vw;
+    text-align: center;
+}
+
+.h3footer {
+    color: white;
+    margin-top: 2vh;
+}
+
+.icons {
+    width: 2vw;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+/* final do CSS do footer */
